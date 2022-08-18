@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--VeryDarkBlue);
+    margin: 10rem;
+
+}
+
+.rating-state,
+.thankyou-state {
+    background-color: var(--DarkBlue);
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    max-width: 400px;
+}
+
+.thankyou-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    line-height: 1.8;
+    color: var(--LightGrey)
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.ratingbutton {
+    display: flex;
+    height: 1rem;
+    width: 1rem;
+    padding: 1.5rem;
+    padding-top: 1.7rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 20%, 30%);
+    margin-top: 0.8rem;
+}
+
+h1 {
+    color: aliceblue;
+    margin-bottom: 1.2rem;
+}
+
+.rating-state img {
+    background-color: hsl(213, 20%, 30%);
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+
+}
+
+button {
+    font-family: inherit;
+}
+
+.attribution {
+    color: antiquewhite;
+    font-size: 11px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.submit-btn {
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--Orange);
+    color: aliceblue;
+    transform: 1s;
+
+}
+
+
+.ratingbutton:hover {
+    background-color: var(--Orange);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: aliceblue;
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.ratingbutton:focus {
+    background-color: var(--LightGrey);
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.thankyou-state img {
+    display: block;
+    margin: 1rem auto 1rem;
+}
+
+#thankyou-para {
+    display: inline;
+    margin: auto;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    padding-top: 0.2rem;
+    background-color: hsl(213, 20%, 30%);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--Orange);
+}
+
+.thankyou-state h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.thankyou-state p {
+    margin-bottom: 1.5rem;
+}
